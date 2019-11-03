@@ -3,4 +3,4 @@ Guidebook Examples
 
 Examples for how to use https://github.com/wongelz/guidebook
 
-You can see a sample report here:
+You can view the sample report [here](https://wongelz.github.io/guidebook-examples/index.html).
