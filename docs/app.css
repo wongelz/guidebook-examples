@@ -1,0 +1,42 @@
+#modal-body-stacktrace pre {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+    background-color: #000;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#modal-body-stacktrace pre code {
+    font-size: 80%;
+    color: #bbbbbb;
+}
+
+.modal-body {
+    text-align: center;
+    padding-top: 0;
+}
+
+#modal-body-screenshot img {
+    max-height: calc(100vh - 250px);
+}
+
+.modal-body .btn-link {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+button.guidebook-info {
+    padding-left: 2px;
+    padding-right: 0;
+    cursor: pointer;
+}
+
+button.guidebook-stacktrace {
+    padding-left: 2px;
+    padding-right: 0;
+    cursor: pointer;
+}
