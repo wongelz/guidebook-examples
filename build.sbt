@@ -2,12 +2,12 @@ name := "guidebook-examples"
 
 version := "0.1"
 
-scalaVersion := "2.13.0"
+scalaVersion := "2.13.3"
 
 resolvers += Resolver.bintrayRepo("wongelz", "guidebook")
 
 libraryDependencies ++= Seq(
-  "com.github.wongelz"           %% "guidebook"                % "0.4.0"  % Test
+  "com.github.wongelz"           %% "guidebook"                % "0.4.4"  % Test
 )
 
 fork in run := true

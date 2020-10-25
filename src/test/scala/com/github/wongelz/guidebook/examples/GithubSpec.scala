@@ -13,7 +13,7 @@ class GithubSpec extends Guidebook {
           go to "https://www.github.com/wongelz/guidebook"
 
           eventually {
-            find(tagName("h1")).value.text mustBe "wongelz/guidebook"
+            find(tagName("h1")).value.text mustBe "wongelz\n/\nguidebook"
           }
         }
 
@@ -41,11 +41,11 @@ class GithubSpec extends Guidebook {
           }
         }
 
-        "see the security advisories" in {
+        "see the security overview" in {
           click on partialLinkText("Security")
 
           eventually {
-            find(tagName("h2")).value.text mustBe "Security Advisories"
+            find(tagName("h2")).value.text mustBe "Security overview"
           }
         }
 
