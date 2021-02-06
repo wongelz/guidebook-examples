@@ -4,10 +4,8 @@ version := "0.1"
 
 scalaVersion := "2.13.3"
 
-resolvers += Resolver.bintrayRepo("wongelz", "guidebook")
-
 libraryDependencies ++= Seq(
-  "com.github.wongelz"           %% "guidebook"                % "0.4.4"  % Test
+  "com.github.wongelz"           %% "guidebook"                % "0.4.5"  % Test
 )
 
 fork in run := true
