@@ -6,14 +6,14 @@ import org.scalatest.OptionValues._
 
 class GithubSpec extends Guidebook {
 
-  usingBrowsers(Chrome(headless = false), Firefox(headless = false)) {
+  usingBrowsers(Chrome(headless = true)) {
     "Anonymous users" when {
       "exploring a repository" can {
         "open a repository" in {
           go to "https://www.github.com/wongelz/guidebook"
 
           eventually {
-            find(tagName("h1")).value.text mustBe "wongelz\n/\nguidebook"
+            find(tagName("h1")).value.text mustBe "wongelz/guidebook"
           }
         }
 
