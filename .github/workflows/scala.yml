@@ -22,6 +22,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Install Chrome
-      run: ./github/install-chrome.sh
+      run: ./.github/install-chrome.sh
     - name: Run tests
       run: sbt test
