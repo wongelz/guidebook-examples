@@ -26,6 +26,7 @@ jobs:
     - name: Run tests
       run: sbt test
     - name: Archive test report
+      if: always()
       uses: actions/upload-artifact@v3
       with:
         name: guidebook
