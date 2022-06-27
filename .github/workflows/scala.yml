@@ -25,3 +25,8 @@ jobs:
       run: ./.github/install-chrome.sh
     - name: Run tests
       run: sbt test
+    - name: Archive test report
+      uses: actions/upload-artifact@v3
+      with:
+        name: guidebook
+        path: target/guidebook
